@@ -34,33 +34,42 @@ class PlaySoundsViewController: UIViewController {
     }
 
 
-
-    @IBAction func playbackStop(sender: UIButton) {
-        
-        audioPlayerNode.stop()
-    }
-    
-// 5 different button effects can be invoked to create a different audio output
-// Each button sends the type of manipulation and the value for that to the playbackManipulated function
-    
-    
     @IBAction func playbackSlow(sender: UIButton) {
+    //Alter speed and set rate to 0.5
+        
         playbackManipulated("Speed", inputValue: 0.50)
     }
 
     @IBAction func playbackFast(sender: UIButton) {
+    //Alter speed and set rate to 1.75
+
         playbackManipulated("Speed", inputValue: 1.75)
     }
     
     @IBAction func playChipmunkAudio(sender: UIButton) {
-        playbackManipulated("Pitch", inputValue: 1000)    }
+    //Alter pitch and set to 1000
+        
+        playbackManipulated("Pitch", inputValue: 1000)
+    }
     
     @IBAction func playDarthAudio(sender: UIButton) {
+    //Alter pitch and set to -500
+        
         playbackManipulated("Pitch", inputValue: -500)
     }
     
     @IBAction func playReverb(sender: UIButton) {
+    //Alter reverb and set to 75
+        
         playbackManipulated("Reverb", inputValue: 75)
+    }
+    
+    @IBAction func playbackStop(sender: UIButton) {
+    //Stop any playback in progress
+        
+        audioPlayerNode.stop()
+        audioEngine.stop()
+        audioEngine.reset()
     }
     
     func playbackManipulated (inputType: String, inputValue: float_t) {
