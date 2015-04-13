@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7531" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="cb9-Wy-HVi">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7531" systemVersion="14D131" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="cb9-Wy-HVi">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7520"/>
-        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
     </dependencies>
     <scenes>
         <!--Record Your Sound-->
@@ -111,44 +112,41 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VoI-4A-saZ">
-                                <rect key="frame" x="41" y="211" width="100" height="100"/>
-                                <state key="normal" image="Chipmunk">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="playChipmunkAudio:" destination="2Qi-1C-FQP" eventType="touchUpInside" id="n28-Sy-bgX"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Asj-er-slP">
-                                <rect key="frame" x="41" y="89" width="100" height="97"/>
-                                <state key="normal" image="Slow">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="playbackSlow:" destination="2Qi-1C-FQP" eventType="touchUpInside" id="IxZ-pp-Sv1"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sRv-WU-Q5y">
-                                <rect key="frame" x="459" y="89" width="100" height="97"/>
-                                <state key="normal" image="Fast">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="playbackFast:" destination="2Qi-1C-FQP" eventType="touchUpInside" id="zMb-WK-V1f"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8aB-Sr-LJe">
-                                <rect key="frame" x="459" y="211" width="100" height="100"/>
+                            <button autoresizesSubviews="NO" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8aB-Sr-LJe">
+                                <rect key="frame" x="400" y="350" width="100" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="8aB-Sr-LJe" secondAttribute="height" multiplier="1:1" id="tnM-1g-N9u"/>
+                                </constraints>
                                 <state key="normal" image="Darth">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <variation key="widthClass=compact" misplaced="YES">
+                                    <rect key="frame" x="260" y="286" width="100" height="100"/>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="108" y="534" width="100" height="100"/>
+                                </variation>
                                 <connections>
                                     <action selector="playDarthAudio:" destination="2Qi-1C-FQP" eventType="touchUpInside" id="IBc-62-HE6"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cBx-TT-0bh">
-                                <rect key="frame" x="278" y="501" width="45" height="45"/>
+                            <button autoresizesSubviews="NO" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Asj-er-slP">
+                                <rect key="frame" x="100" y="150" width="100" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="Asj-er-slP" secondAttribute="height" multiplier="1:1" id="HRH-ZK-pRn"/>
+                                </constraints>
+                                <state key="normal" image="Slow">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="widthClass=compact" misplaced="YES">
+                                    <rect key="frame" x="45" y="87" width="100" height="97"/>
+                                </variation>
+                                <connections>
+                                    <action selector="playbackSlow:" destination="2Qi-1C-FQP" eventType="touchUpInside" id="IxZ-pp-Sv1"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cBx-TT-0bh">
+                                <rect key="frame" x="275" y="475" width="50" height="50"/>
                                 <state key="normal" image="Stop">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -158,34 +156,85 @@
                                 <variation key="widthClass=regular" misplaced="YES">
                                     <rect key="frame" x="378" y="486" width="45" height="45"/>
                                 </variation>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="239" y="569" width="50" height="50"/>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=regular" misplaced="YES">
+                                    <rect key="frame" x="376" y="675" width="50" height="50"/>
+                                </variation>
                                 <connections>
                                     <action selector="playbackStop:" destination="2Qi-1C-FQP" eventType="touchUpInside" id="HeP-4a-nWH"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eUB-c6-xy1">
-                                <rect key="frame" x="250" y="371" width="100" height="100"/>
+                            <button autoresizesSubviews="NO" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sRv-WU-Q5y">
+                                <rect key="frame" x="100" y="350" width="100" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="sRv-WU-Q5y" secondAttribute="height" multiplier="1:1" id="Lht-t5-gzz"/>
+                                </constraints>
+                                <state key="normal" image="Fast">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="widthClass=compact" misplaced="YES">
+                                    <rect key="frame" x="226" y="104" width="100" height="97"/>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=compact" ambiguous="YES" misplaced="YES">
+                                    <rect key="frame" x="246" y="104" width="100" height="97"/>
+                                </variation>
+                                <connections>
+                                    <action selector="playbackFast:" destination="2Qi-1C-FQP" eventType="touchUpInside" id="zMb-WK-V1f"/>
+                                </connections>
+                            </button>
+                            <button autoresizesSubviews="NO" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eUB-c6-xy1">
+                                <rect key="frame" x="250" y="250" width="100" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="eUB-c6-xy1" secondAttribute="height" multiplier="1:1" id="A2d-DB-JRT"/>
+                                </constraints>
                                 <state key="normal" image="Reverb">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <variation key="heightClass=regular" misplaced="YES">
+                                    <rect key="frame" x="250" y="354" width="100" height="100"/>
+                                </variation>
+                                <variation key="widthClass=compact" misplaced="YES">
+                                    <rect key="frame" x="33" y="235" width="100" height="100"/>
+                                </variation>
                                 <connections>
                                     <action selector="playReverb:" destination="2Qi-1C-FQP" eventType="touchUpInside" id="CAi-uE-0b3"/>
+                                </connections>
+                            </button>
+                            <button autoresizesSubviews="NO" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VoI-4A-saZ">
+                                <rect key="frame" x="400" y="150" width="100" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="VoI-4A-saZ" secondAttribute="height" multiplier="1:1" id="7KO-EE-kiJ"/>
+                                </constraints>
+                                <state key="normal" image="Chipmunk">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="heightClass=regular" misplaced="YES">
+                                    <rect key="frame" x="90" y="203" width="100" height="100"/>
+                                </variation>
+                                <variation key="widthClass=compact" misplaced="YES">
+                                    <rect key="frame" x="124" y="396" width="100" height="100"/>
+                                </variation>
+                                <connections>
+                                    <action selector="playChipmunkAudio:" destination="2Qi-1C-FQP" eventType="touchUpInside" id="n28-Sy-bgX"/>
                                 </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="Asj-er-slP" firstAttribute="leading" secondItem="jNd-uT-59t" secondAttribute="leadingMargin" constant="25" id="53H-xo-oJg"/>
-                            <constraint firstItem="Asj-er-slP" firstAttribute="top" secondItem="AJf-FH-2D4" secondAttribute="bottom" constant="25" id="55e-tf-Yab"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="sRv-WU-Q5y" secondAttribute="trailing" constant="25" id="DdK-Aj-8ul"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="8aB-Sr-LJe" secondAttribute="trailing" constant="25" id="JTB-Qk-hdX"/>
-                            <constraint firstItem="VoI-4A-saZ" firstAttribute="top" secondItem="Asj-er-slP" secondAttribute="bottom" constant="25" id="Jdk-hV-vmf"/>
-                            <constraint firstItem="qBu-rF-ZUJ" firstAttribute="top" secondItem="cBx-TT-0bh" secondAttribute="bottom" constant="10" id="MK4-fL-EIe"/>
-                            <constraint firstAttribute="centerX" secondItem="cBx-TT-0bh" secondAttribute="centerX" constant="-0.5" id="Qhq-Nx-4Sd"/>
-                            <constraint firstItem="VoI-4A-saZ" firstAttribute="leading" secondItem="jNd-uT-59t" secondAttribute="leadingMargin" constant="25" id="Sm8-9K-KXW"/>
-                            <constraint firstItem="8aB-Sr-LJe" firstAttribute="top" secondItem="sRv-WU-Q5y" secondAttribute="bottom" constant="25" id="XbA-m2-PYR"/>
-                            <constraint firstItem="cBx-TT-0bh" firstAttribute="top" secondItem="eUB-c6-xy1" secondAttribute="bottom" constant="30" id="bWS-nz-84H"/>
-                            <constraint firstItem="sRv-WU-Q5y" firstAttribute="top" secondItem="AJf-FH-2D4" secondAttribute="bottom" constant="25" id="etc-qF-YUY"/>
-                            <constraint firstAttribute="centerX" secondItem="eUB-c6-xy1" secondAttribute="centerX" id="rna-do-o7O"/>
+                            <constraint firstAttribute="centerY" secondItem="Asj-er-slP" secondAttribute="centerY" multiplier="1.5" id="BdM-7A-nzH"/>
+                            <constraint firstItem="8aB-Sr-LJe" firstAttribute="bottom" secondItem="jNd-uT-59t" secondAttribute="centerY" multiplier="1.5" id="EUZ-MY-ZKg"/>
+                            <constraint firstAttribute="centerY" secondItem="VoI-4A-saZ" secondAttribute="centerY" multiplier="1.5" id="Lxz-lw-n8W"/>
+                            <constraint firstAttribute="centerX" secondItem="eUB-c6-xy1" secondAttribute="centerX" id="bmv-m0-qXQ"/>
+                            <constraint firstItem="Asj-er-slP" firstAttribute="centerX" secondItem="jNd-uT-59t" secondAttribute="centerX" multiplier="0.5" id="cr8-Xd-cdI"/>
+                            <constraint firstItem="qBu-rF-ZUJ" firstAttribute="top" secondItem="cBx-TT-0bh" secondAttribute="bottom" constant="31" id="d5K-n1-Nfw"/>
+                            <constraint firstAttribute="centerX" secondItem="cBx-TT-0bh" secondAttribute="centerX" id="f3k-Ey-SsL"/>
+                            <constraint firstItem="8aB-Sr-LJe" firstAttribute="centerX" secondItem="jNd-uT-59t" secondAttribute="centerX" multiplier="1.5" id="g74-rD-YJe"/>
+                            <constraint firstItem="VoI-4A-saZ" firstAttribute="centerX" secondItem="jNd-uT-59t" secondAttribute="centerX" multiplier="1.5" id="jBX-Nl-qUE"/>
+                            <constraint firstAttribute="centerY" secondItem="eUB-c6-xy1" secondAttribute="centerY" id="kEn-Gh-x7r"/>
+                            <constraint firstItem="sRv-WU-Q5y" firstAttribute="bottom" secondItem="jNd-uT-59t" secondAttribute="centerY" multiplier="1.5" id="pkd-Bp-0eM"/>
+                            <constraint firstItem="sRv-WU-Q5y" firstAttribute="centerX" secondItem="jNd-uT-59t" secondAttribute="centerX" multiplier="0.5" id="z5e-Tc-1ma"/>
                         </constraints>
                     </view>
                     <toolbarItems/>
