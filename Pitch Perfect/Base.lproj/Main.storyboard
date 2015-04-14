@@ -40,7 +40,7 @@
                                     <action selector="recordAudio:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="QrS-Me-p5K"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d9O-eV-H9w">
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d9O-eV-H9w">
                                 <rect key="frame" x="275" y="379" width="50" height="50"/>
                                 <state key="normal" image="Stop">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -103,10 +103,10 @@
                                 <exclude reference="o0L-YV-TEq"/>
                             </mask>
                             <mask key="constraints">
-                                <exclude reference="j2F-Ej-hTs"/>
-                                <exclude reference="wLy-pb-MiW"/>
                                 <exclude reference="89H-vJ-hXj"/>
                                 <exclude reference="PEq-q3-oiK"/>
+                                <exclude reference="j2F-Ej-hTs"/>
+                                <exclude reference="wLy-pb-MiW"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
@@ -115,10 +115,10 @@
                                 <include reference="o0L-YV-TEq"/>
                             </mask>
                             <mask key="constraints">
-                                <include reference="j2F-Ej-hTs"/>
-                                <include reference="wLy-pb-MiW"/>
                                 <include reference="89H-vJ-hXj"/>
                                 <include reference="PEq-q3-oiK"/>
+                                <include reference="j2F-Ej-hTs"/>
+                                <include reference="wLy-pb-MiW"/>
                             </mask>
                         </variation>
                     </view>
@@ -196,7 +196,7 @@
                                     <action selector="playbackFast:" destination="2Qi-1C-FQP" eventType="touchUpInside" id="zMb-WK-V1f"/>
                                 </connections>
                             </button>
-                            <button autoresizesSubviews="NO" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eUB-c6-xy1">
+                            <button autoresizesSubviews="NO" opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eUB-c6-xy1">
                                 <rect key="frame" x="349" y="400" width="100" height="100"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="eUB-c6-xy1" secondAttribute="height" multiplier="1:1" id="A2d-DB-JRT"/>
@@ -211,7 +211,7 @@
                                     <action selector="playReverb:" destination="2Qi-1C-FQP" eventType="touchUpInside" id="CAi-uE-0b3"/>
                                 </connections>
                             </button>
-                            <button autoresizesSubviews="NO" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VoI-4A-saZ">
+                            <button autoresizesSubviews="NO" opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VoI-4A-saZ">
                                 <rect key="frame" x="349" y="100" width="100" height="100"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="VoI-4A-saZ" secondAttribute="height" multiplier="1:1" id="7KO-EE-kiJ"/>
@@ -241,7 +241,7 @@
                                     <action selector="playbackNormal:" destination="2Qi-1C-FQP" eventType="touchUpInside" id="7Me-uz-1wh"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cBx-TT-0bh">
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cBx-TT-0bh">
                                 <rect key="frame" x="275" y="478" width="50" height="50"/>
                                 <state key="normal" image="Stop">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
