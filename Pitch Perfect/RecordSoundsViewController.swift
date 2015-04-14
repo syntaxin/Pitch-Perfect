@@ -101,6 +101,7 @@ class RecordSoundsViewController: UIViewController, AVAudioRecorderDelegate {
         //This function is to power the pause recording button for the user
         //It will also prepare the app to resume recording or stop
         currentlyPausedStateUX()
+        audioRecorder.pause()
     }
 
     @IBAction func resumeRecordAudio(sender: UIButton) {
