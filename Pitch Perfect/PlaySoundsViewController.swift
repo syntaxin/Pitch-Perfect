@@ -74,7 +74,7 @@ class PlaySoundsViewController: UIViewController {
     
     func playbackManipulated (inputType: String, inputValue: float_t) {
     //This function will accept variables from the different buttons
-    //Depending on what the user chose, this function then uses a different effect accordingly and connects it to the engine
+    //This function uses a different effect and connects it to the engine based on user choice
     //The engine then plays the resulting output
         
     

@@ -30,16 +30,6 @@ class RecordSoundsViewController: UIViewController, AVAudioRecorderDelegate {
         microphoneButton.enabled=true
     }
     
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        // Nothing to do here for this app
-    }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-
     @IBAction func recordAudio(sender: UIButton) {
         //Simple UX Manipulations to prepare the user for their recording session
         microphoneButton.enabled = false
@@ -59,7 +49,6 @@ class RecordSoundsViewController: UIViewController, AVAudioRecorderDelegate {
         
         //Debug option to make sure this is working correctly
         //println(filePath)
-        //
         
         var session = AVAudioSession.sharedInstance()
         session.setCategory(AVAudioSessionCategoryPlayAndRecord, error: nil)
@@ -94,7 +83,7 @@ class RecordSoundsViewController: UIViewController, AVAudioRecorderDelegate {
     
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        //Time to pass the recorded file to the next view controller
+        //This is to pass the recorded file to the next view controller
         
         if (segue.identifier == "stopRecording") {
             let playSoundsVC:PlaySoundsViewController = segue.destinationViewController as! PlaySoundsViewController
