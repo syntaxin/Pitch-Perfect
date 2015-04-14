@@ -16,7 +16,7 @@ class PlaySoundsViewController: UIViewController {
     var audioEngine:AVAudioEngine!
     var audioPlayerNode:AVAudioPlayerNode!
     var audioFile:AVAudioFile!
-    
+
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -34,6 +34,13 @@ class PlaySoundsViewController: UIViewController {
     }
 
 
+    @IBAction func playbackNormal(sender: UIButton) {
+        //Alter speed and set rate to 0.5
+        
+        playbackManipulated("Speed", inputValue: 1.0)
+    }
+    
+    
     @IBAction func playbackSlow(sender: UIButton) {
     //Alter speed and set rate to 0.5
         
